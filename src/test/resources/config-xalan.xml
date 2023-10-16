@@ -20,125 +20,125 @@
 <!--
 <!DOCTYPE Configuration SYSTEM "config.dtd">
 -->
-<!-- This configuration file is used for configuration of the org.apache.xml.security package -->
-<Configuration target="org.apache.xml.security" xmlns="http://www.xmlsecurity.org/NS/#configuration">
+<!-- This configuration file is used for configuration of the com.kjhxtc.internal.apache.xml.security package -->
+<Configuration target="com.kjhxtc.internal.apache.xml.security" xmlns="http://www.xmlsecurity.org/NS/#configuration">
    <CanonicalizationMethods>
       <CanonicalizationMethod URI="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"
-                              JAVACLASS="org.apache.xml.security.c14n.implementations.Canonicalizer20010315OmitComments" />
+                              JAVACLASS="com.kjhxtc.internal.apache.xml.security.c14n.implementations.Canonicalizer20010315OmitComments" />
       <CanonicalizationMethod URI="http://www.w3.org/TR/2001/REC-xml-c14n-20010315#WithComments"
-                              JAVACLASS="org.apache.xml.security.c14n.implementations.Canonicalizer20010315WithComments" />
+                              JAVACLASS="com.kjhxtc.internal.apache.xml.security.c14n.implementations.Canonicalizer20010315WithComments" />
 
       <CanonicalizationMethod URI="http://www.w3.org/2001/10/xml-exc-c14n#"
-                              JAVACLASS="org.apache.xml.security.c14n.implementations.Canonicalizer20010315ExclOmitComments"/>
+                              JAVACLASS="com.kjhxtc.internal.apache.xml.security.c14n.implementations.Canonicalizer20010315ExclOmitComments"/>
       <CanonicalizationMethod URI="http://www.w3.org/2001/10/xml-exc-c14n#WithComments"
-                              JAVACLASS="org.apache.xml.security.c14n.implementations.Canonicalizer20010315ExclWithComments"/>
+                              JAVACLASS="com.kjhxtc.internal.apache.xml.security.c14n.implementations.Canonicalizer20010315ExclWithComments"/>
       <CanonicalizationMethod URI="http://www.w3.org/2006/12/xml-c14n11"
-                              JAVACLASS="org.apache.xml.security.c14n.implementations.Canonicalizer11_OmitComments"/>
+                              JAVACLASS="com.kjhxtc.internal.apache.xml.security.c14n.implementations.Canonicalizer11_OmitComments"/>
       <CanonicalizationMethod URI="http://www.w3.org/2006/12/xml-c14n11#WithComments"
-                              JAVACLASS="org.apache.xml.security.c14n.implementations.Canonicalizer11_WithComments"/>
+                              JAVACLASS="com.kjhxtc.internal.apache.xml.security.c14n.implementations.Canonicalizer11_WithComments"/>
       <CanonicalizationMethod URI="http://santuario.apache.org/c14n/physical"
-                              JAVACLASS="org.apache.xml.security.c14n.implementations.CanonicalizerPhysical"/>
+                              JAVACLASS="com.kjhxtc.internal.apache.xml.security.c14n.implementations.CanonicalizerPhysical"/>
    </CanonicalizationMethods>
    <TransformAlgorithms>
       <!-- Base64 -->
       <TransformAlgorithm URI="http://www.w3.org/2000/09/xmldsig#base64"
-                          JAVACLASS="org.apache.xml.security.transforms.implementations.TransformBase64Decode" />
+                          JAVACLASS="com.kjhxtc.internal.apache.xml.security.transforms.implementations.TransformBase64Decode" />
       <!-- c14n omitting comments -->
       <TransformAlgorithm URI="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"
-                          JAVACLASS="org.apache.xml.security.transforms.implementations.TransformC14N" />
+                          JAVACLASS="com.kjhxtc.internal.apache.xml.security.transforms.implementations.TransformC14N" />
       <!-- c14n with comments -->
       <TransformAlgorithm URI="http://www.w3.org/TR/2001/REC-xml-c14n-20010315#WithComments"
-                          JAVACLASS="org.apache.xml.security.transforms.implementations.TransformC14NWithComments" />
+                          JAVACLASS="com.kjhxtc.internal.apache.xml.security.transforms.implementations.TransformC14NWithComments" />
       <!-- c14n 1.1 omitting comments -->
       <TransformAlgorithm URI="http://www.w3.org/2006/12/xml-c14n11"
-                          JAVACLASS="org.apache.xml.security.transforms.implementations.TransformC14N11" />
+                          JAVACLASS="com.kjhxtc.internal.apache.xml.security.transforms.implementations.TransformC14N11" />
       <!-- c14n 1.1 with comments -->
       <TransformAlgorithm URI="http://www.w3.org/2006/12/xml-c14n11#WithComments"
-                          JAVACLASS="org.apache.xml.security.transforms.implementations.TransformC14N11_WithComments" />
+                          JAVACLASS="com.kjhxtc.internal.apache.xml.security.transforms.implementations.TransformC14N11_WithComments" />
       <!-- exclusive c14n omitting comments -->
       <TransformAlgorithm URI="http://www.w3.org/2001/10/xml-exc-c14n#"
-                          JAVACLASS="org.apache.xml.security.transforms.implementations.TransformC14NExclusive" />
+                          JAVACLASS="com.kjhxtc.internal.apache.xml.security.transforms.implementations.TransformC14NExclusive" />
       <!-- exclusive c14n with comments -->
       <TransformAlgorithm URI="http://www.w3.org/2001/10/xml-exc-c14n#WithComments"
-                          JAVACLASS="org.apache.xml.security.transforms.implementations.TransformC14NExclusiveWithComments" />
+                          JAVACLASS="com.kjhxtc.internal.apache.xml.security.transforms.implementations.TransformC14NExclusiveWithComments" />
 
       <!-- XPath transform -->
       <TransformAlgorithm URI="http://www.w3.org/TR/1999/REC-xpath-19991116"
-                          JAVACLASS="org.apache.xml.security.test.dom.xalan.TransformXPath" />
+                          JAVACLASS="com.kjhxtc.internal.apache.xml.security.test.dom.xalan.TransformXPath" />
       <!-- enveloped signature -->
       <TransformAlgorithm URI="http://www.w3.org/2000/09/xmldsig#enveloped-signature"
-                          JAVACLASS="org.apache.xml.security.transforms.implementations.TransformEnvelopedSignature" />
+                          JAVACLASS="com.kjhxtc.internal.apache.xml.security.transforms.implementations.TransformEnvelopedSignature" />
       <!-- XSLT -->
       <TransformAlgorithm URI="http://www.w3.org/TR/1999/REC-xslt-19991116"
-                          JAVACLASS="org.apache.xml.security.transforms.implementations.TransformXSLT" />
+                          JAVACLASS="com.kjhxtc.internal.apache.xml.security.transforms.implementations.TransformXSLT" />
       <!-- XPath version 2 -->
       <TransformAlgorithm URI="http://www.w3.org/2002/06/xmldsig-filter2"
-                          JAVACLASS="org.apache.xml.security.test.dom.xalan.TransformXPath2Filter" />
+                          JAVACLASS="com.kjhxtc.internal.apache.xml.security.test.dom.xalan.TransformXPath2Filter" />
    </TransformAlgorithms>
    <SignatureAlgorithms>
       <SignatureAlgorithm URI="http://www.w3.org/2000/09/xmldsig#dsa-sha1"
-                          JAVACLASS="org.apache.xml.security.algorithms.implementations.SignatureDSA" />
+                          JAVACLASS="com.kjhxtc.internal.apache.xml.security.algorithms.implementations.SignatureDSA" />
       <SignatureAlgorithm URI="http://www.w3.org/2000/09/xmldsig#rsa-sha1"
-                          JAVACLASS="org.apache.xml.security.algorithms.implementations.SignatureBaseRSA$SignatureRSASHA1" />
+                          JAVACLASS="com.kjhxtc.internal.apache.xml.security.algorithms.implementations.SignatureBaseRSA$SignatureRSASHA1" />
       <SignatureAlgorithm URI="http://www.w3.org/2000/09/xmldsig#hmac-sha1"
-                          JAVACLASS="org.apache.xml.security.algorithms.implementations.IntegrityHmac$IntegrityHmacSHA1" />
+                          JAVACLASS="com.kjhxtc.internal.apache.xml.security.algorithms.implementations.IntegrityHmac$IntegrityHmacSHA1" />
 
       <SignatureAlgorithm URI="http://www.w3.org/2001/04/xmldsig-more#rsa-md5"
-                          JAVACLASS="org.apache.xml.security.algorithms.implementations.SignatureBaseRSA$SignatureRSAMD5" />
+                          JAVACLASS="com.kjhxtc.internal.apache.xml.security.algorithms.implementations.SignatureBaseRSA$SignatureRSAMD5" />
       <SignatureAlgorithm URI="http://www.w3.org/2001/04/xmldsig-more#rsa-ripemd160"
-                          JAVACLASS="org.apache.xml.security.algorithms.implementations.SignatureBaseRSA$SignatureRSARIPEMD160" />
+                          JAVACLASS="com.kjhxtc.internal.apache.xml.security.algorithms.implementations.SignatureBaseRSA$SignatureRSARIPEMD160" />
       <SignatureAlgorithm URI="http://www.w3.org/2001/04/xmldsig-more#rsa-sha224"
-                          JAVACLASS="org.apache.xml.security.algorithms.implementations.SignatureBaseRSA$SignatureRSASHA224" />
+                          JAVACLASS="com.kjhxtc.internal.apache.xml.security.algorithms.implementations.SignatureBaseRSA$SignatureRSASHA224" />
       <SignatureAlgorithm URI="http://www.w3.org/2001/04/xmldsig-more#rsa-sha256"
-                          JAVACLASS="org.apache.xml.security.algorithms.implementations.SignatureBaseRSA$SignatureRSASHA256" />
+                          JAVACLASS="com.kjhxtc.internal.apache.xml.security.algorithms.implementations.SignatureBaseRSA$SignatureRSASHA256" />
       <SignatureAlgorithm URI="http://www.w3.org/2001/04/xmldsig-more#rsa-sha384"
-                          JAVACLASS="org.apache.xml.security.algorithms.implementations.SignatureBaseRSA$SignatureRSASHA384" />
+                          JAVACLASS="com.kjhxtc.internal.apache.xml.security.algorithms.implementations.SignatureBaseRSA$SignatureRSASHA384" />
       <SignatureAlgorithm URI="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"
-                          JAVACLASS="org.apache.xml.security.algorithms.implementations.SignatureBaseRSA$SignatureRSASHA512" />
+                          JAVACLASS="com.kjhxtc.internal.apache.xml.security.algorithms.implementations.SignatureBaseRSA$SignatureRSASHA512" />
                           
       <SignatureAlgorithm URI="http://www.w3.org/2007/05/xmldsig-more#sha1-rsa-MGF1"
-                          JAVACLASS="org.apache.xml.security.algorithms.implementations.SignatureBaseRSA$SignatureRSASHA1MGF1" />
+                          JAVACLASS="com.kjhxtc.internal.apache.xml.security.algorithms.implementations.SignatureBaseRSA$SignatureRSASHA1MGF1" />
       <SignatureAlgorithm URI="http://www.w3.org/2007/05/xmldsig-more#sha224-rsa-MGF1"
-                          JAVACLASS="org.apache.xml.security.algorithms.implementations.SignatureBaseRSA$SignatureRSASHA224MGF1" />
+                          JAVACLASS="com.kjhxtc.internal.apache.xml.security.algorithms.implementations.SignatureBaseRSA$SignatureRSASHA224MGF1" />
       <SignatureAlgorithm URI="http://www.w3.org/2007/05/xmldsig-more#sha256-rsa-MGF1"
-                          JAVACLASS="org.apache.xml.security.algorithms.implementations.SignatureBaseRSA$SignatureRSASHA256MGF1" />
+                          JAVACLASS="com.kjhxtc.internal.apache.xml.security.algorithms.implementations.SignatureBaseRSA$SignatureRSASHA256MGF1" />
       <SignatureAlgorithm URI="http://www.w3.org/2007/05/xmldsig-more#sha384-rsa-MGF1"
-                          JAVACLASS="org.apache.xml.security.algorithms.implementations.SignatureBaseRSA$SignatureRSASHA384MGF1" />
+                          JAVACLASS="com.kjhxtc.internal.apache.xml.security.algorithms.implementations.SignatureBaseRSA$SignatureRSASHA384MGF1" />
       <SignatureAlgorithm URI="http://www.w3.org/2007/05/xmldsig-more#sha512-rsa-MGF1"
-                          JAVACLASS="org.apache.xml.security.algorithms.implementations.SignatureBaseRSA$SignatureRSASHA512MGF1" />
+                          JAVACLASS="com.kjhxtc.internal.apache.xml.security.algorithms.implementations.SignatureBaseRSA$SignatureRSASHA512MGF1" />
                           
       <SignatureAlgorithm URI="http://www.w3.org/2007/05/xmldsig-more#sha3-224-rsa-MGF1"
-                          JAVACLASS="org.apache.xml.security.algorithms.implementations.SignatureBaseRSA$SignatureRSASHA3_224MGF1" />
+                          JAVACLASS="com.kjhxtc.internal.apache.xml.security.algorithms.implementations.SignatureBaseRSA$SignatureRSASHA3_224MGF1" />
       <SignatureAlgorithm URI="http://www.w3.org/2007/05/xmldsig-more#sha3-256-rsa-MGF1"
-                          JAVACLASS="org.apache.xml.security.algorithms.implementations.SignatureBaseRSA$SignatureRSASHA3_256MGF1" />
+                          JAVACLASS="com.kjhxtc.internal.apache.xml.security.algorithms.implementations.SignatureBaseRSA$SignatureRSASHA3_256MGF1" />
       <SignatureAlgorithm URI="http://www.w3.org/2007/05/xmldsig-more#sha3-384-rsa-MGF1"
-                          JAVACLASS="org.apache.xml.security.algorithms.implementations.SignatureBaseRSA$SignatureRSASHA3_384MGF1" />
+                          JAVACLASS="com.kjhxtc.internal.apache.xml.security.algorithms.implementations.SignatureBaseRSA$SignatureRSASHA3_384MGF1" />
       <SignatureAlgorithm URI="http://www.w3.org/2007/05/xmldsig-more#sha3-512-rsa-MGF1"
-                          JAVACLASS="org.apache.xml.security.algorithms.implementations.SignatureBaseRSA$SignatureRSASHA3_512MGF1" />
+                          JAVACLASS="com.kjhxtc.internal.apache.xml.security.algorithms.implementations.SignatureBaseRSA$SignatureRSASHA3_512MGF1" />
                           
       <SignatureAlgorithm URI="http://www.w3.org/2001/04/xmldsig-more#ecdsa-sha1"
-                          JAVACLASS="org.apache.xml.security.algorithms.implementations.SignatureECDSA$SignatureECDSASHA1" />
+                          JAVACLASS="com.kjhxtc.internal.apache.xml.security.algorithms.implementations.SignatureECDSA$SignatureECDSASHA1" />
       <SignatureAlgorithm URI="http://www.w3.org/2001/04/xmldsig-more#ecdsa-sha224"
-                          JAVACLASS="org.apache.xml.security.algorithms.implementations.SignatureECDSA$SignatureECDSASHA224" />
+                          JAVACLASS="com.kjhxtc.internal.apache.xml.security.algorithms.implementations.SignatureECDSA$SignatureECDSASHA224" />
       <SignatureAlgorithm URI="http://www.w3.org/2001/04/xmldsig-more#ecdsa-sha256"
-                          JAVACLASS="org.apache.xml.security.algorithms.implementations.SignatureECDSA$SignatureECDSASHA256" />
+                          JAVACLASS="com.kjhxtc.internal.apache.xml.security.algorithms.implementations.SignatureECDSA$SignatureECDSASHA256" />
       <SignatureAlgorithm URI="http://www.w3.org/2001/04/xmldsig-more#ecdsa-sha384"
-                          JAVACLASS="org.apache.xml.security.algorithms.implementations.SignatureECDSA$SignatureECDSASHA384" />
+                          JAVACLASS="com.kjhxtc.internal.apache.xml.security.algorithms.implementations.SignatureECDSA$SignatureECDSASHA384" />
       <SignatureAlgorithm URI="http://www.w3.org/2001/04/xmldsig-more#ecdsa-sha512"
-                          JAVACLASS="org.apache.xml.security.algorithms.implementations.SignatureECDSA$SignatureECDSASHA512" />
+                          JAVACLASS="com.kjhxtc.internal.apache.xml.security.algorithms.implementations.SignatureECDSA$SignatureECDSASHA512" />
       <SignatureAlgorithm URI="http://www.w3.org/2007/05/xmldsig-more#ecdsa-ripemd160"
-                          JAVACLASS="org.apache.xml.security.algorithms.implementations.SignatureECDSA$SignatureECDSARIPEMD160" />
+                          JAVACLASS="com.kjhxtc.internal.apache.xml.security.algorithms.implementations.SignatureECDSA$SignatureECDSARIPEMD160" />
                           
       <SignatureAlgorithm URI="http://www.w3.org/2001/04/xmldsig-more#hmac-md5"
-                          JAVACLASS="org.apache.xml.security.algorithms.implementations.IntegrityHmac$IntegrityHmacMD5" />
+                          JAVACLASS="com.kjhxtc.internal.apache.xml.security.algorithms.implementations.IntegrityHmac$IntegrityHmacMD5" />
       <SignatureAlgorithm URI="http://www.w3.org/2001/04/xmldsig-more#hmac-ripemd160"
-                          JAVACLASS="org.apache.xml.security.algorithms.implementations.IntegrityHmac$IntegrityHmacRIPEMD160" />
+                          JAVACLASS="com.kjhxtc.internal.apache.xml.security.algorithms.implementations.IntegrityHmac$IntegrityHmacRIPEMD160" />
       <SignatureAlgorithm URI="http://www.w3.org/2001/04/xmldsig-more#hmac-sha256"
-                          JAVACLASS="org.apache.xml.security.algorithms.implementations.IntegrityHmac$IntegrityHmacSHA256" />
+                          JAVACLASS="com.kjhxtc.internal.apache.xml.security.algorithms.implementations.IntegrityHmac$IntegrityHmacSHA256" />
       <SignatureAlgorithm URI="http://www.w3.org/2001/04/xmldsig-more#hmac-sha384"
-                          JAVACLASS="org.apache.xml.security.algorithms.implementations.IntegrityHmac$IntegrityHmacSHA384" />
+                          JAVACLASS="com.kjhxtc.internal.apache.xml.security.algorithms.implementations.IntegrityHmac$IntegrityHmacSHA384" />
       <SignatureAlgorithm URI="http://www.w3.org/2001/04/xmldsig-more#hmac-sha512"
-                          JAVACLASS="org.apache.xml.security.algorithms.implementations.IntegrityHmac$IntegrityHmacSHA512" />
+                          JAVACLASS="com.kjhxtc.internal.apache.xml.security.algorithms.implementations.IntegrityHmac$IntegrityHmacSHA512" />
    </SignatureAlgorithms>
    <JCEAlgorithmMappings>
       <Algorithms>
@@ -626,35 +626,35 @@
    </JCEAlgorithmMappings>
    <ResourceBundles defaultLanguageCode="en" defaultCountryCode="US"/>
    <ResourceResolvers>
-      <Resolver JAVACLASS="org.apache.xml.security.utils.resolver.implementations.ResolverDirectHTTP"
+      <Resolver JAVACLASS="com.kjhxtc.internal.apache.xml.security.utils.resolver.implementations.ResolverDirectHTTP"
                 DESCRIPTION="A simple resolver for requests to HTTP space" />
-      <Resolver JAVACLASS="org.apache.xml.security.utils.resolver.implementations.ResolverLocalFilesystem"
+      <Resolver JAVACLASS="com.kjhxtc.internal.apache.xml.security.utils.resolver.implementations.ResolverLocalFilesystem"
                 DESCRIPTION="A simple resolver for requests to the local file system" />
-      <Resolver JAVACLASS="org.apache.xml.security.utils.resolver.implementations.ResolverFragment"
+      <Resolver JAVACLASS="com.kjhxtc.internal.apache.xml.security.utils.resolver.implementations.ResolverFragment"
                 DESCRIPTION="A simple resolver for requests of same-document URIs" />
-      <Resolver JAVACLASS="org.apache.xml.security.utils.resolver.implementations.ResolverXPointer"
+      <Resolver JAVACLASS="com.kjhxtc.internal.apache.xml.security.utils.resolver.implementations.ResolverXPointer"
                 DESCRIPTION="A simple resolver for requests of XPointer fragments" />
    </ResourceResolvers>
    <KeyResolver>
       <!-- This section contains a list of KeyResolvers that are available in
            every KeyInfo object -->
-      <Resolver JAVACLASS="org.apache.xml.security.keys.keyresolver.implementations.RSAKeyValueResolver"
+      <Resolver JAVACLASS="com.kjhxtc.internal.apache.xml.security.keys.keyresolver.implementations.RSAKeyValueResolver"
                 DESCRIPTION="Can extract RSA public keys" />
-      <Resolver JAVACLASS="org.apache.xml.security.keys.keyresolver.implementations.DSAKeyValueResolver"
+      <Resolver JAVACLASS="com.kjhxtc.internal.apache.xml.security.keys.keyresolver.implementations.DSAKeyValueResolver"
                 DESCRIPTION="Can extract DSA public keys" />
-      <Resolver JAVACLASS="org.apache.xml.security.keys.keyresolver.implementations.X509CertificateResolver"
+      <Resolver JAVACLASS="com.kjhxtc.internal.apache.xml.security.keys.keyresolver.implementations.X509CertificateResolver"
                 DESCRIPTION="Can extract public keys from X509 certificates" />
-      <Resolver JAVACLASS="org.apache.xml.security.keys.keyresolver.implementations.X509SKIResolver"
+      <Resolver JAVACLASS="com.kjhxtc.internal.apache.xml.security.keys.keyresolver.implementations.X509SKIResolver"
                 DESCRIPTION="Uses an X509v3 SubjectKeyIdentifier extension to retrieve a certificate from the storages" />
-      <Resolver JAVACLASS="org.apache.xml.security.keys.keyresolver.implementations.RetrievalMethodResolver"
+      <Resolver JAVACLASS="com.kjhxtc.internal.apache.xml.security.keys.keyresolver.implementations.RetrievalMethodResolver"
                 DESCRIPTION="Resolves keys and certificates using ResourceResolvers" />
-      <Resolver JAVACLASS="org.apache.xml.security.keys.keyresolver.implementations.X509SubjectNameResolver"
+      <Resolver JAVACLASS="com.kjhxtc.internal.apache.xml.security.keys.keyresolver.implementations.X509SubjectNameResolver"
                 DESCRIPTION="Uses an X509 SubjectName to retrieve a certificate from the storages" />
-      <Resolver JAVACLASS="org.apache.xml.security.keys.keyresolver.implementations.X509IssuerSerialResolver"
+      <Resolver JAVACLASS="com.kjhxtc.internal.apache.xml.security.keys.keyresolver.implementations.X509IssuerSerialResolver"
                 DESCRIPTION="Uses an X509 IssuerName and IssuerSerial to retrieve a certificate from the storages" />
-      <Resolver JAVACLASS="org.apache.xml.security.keys.keyresolver.implementations.ECKeyValueResolver"
+      <Resolver JAVACLASS="com.kjhxtc.internal.apache.xml.security.keys.keyresolver.implementations.ECKeyValueResolver"
                 DESCRIPTION="Can extract EC public keys" />
-      <Resolver JAVACLASS="org.apache.xml.security.keys.keyresolver.implementations.SM2KeyValueResolver"
+      <Resolver JAVACLASS="com.kjhxtc.internal.apache.xml.security.keys.keyresolver.implementations.SM2KeyValueResolver"
                 DESCRIPTION="Can extract EC(SM2) public keys"/>
    </KeyResolver>
  
