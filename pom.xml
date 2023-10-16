@@ -18,8 +18,8 @@
 -->
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
-    <groupId>org.apache.santuario</groupId>
-    <artifactId>xmlsec</artifactId>
+    <groupId>com.kjhxtc.santuario</groupId>
+    <artifactId>apache-xmlsec-2</artifactId>
     <packaging>bundle</packaging>
     <name>Apache XML Security for Java</name>
     <version>2.3.5-SNAPSHOT</version>
@@ -29,24 +29,24 @@
         Processing, W3C Recommendation 10 December 2002. As of version 1.4,
         the library supports the standard Java API JSR-105: XML Digital Signature APIs.
     </description>
-    <url>https://santuario.apache.org/</url>
-    <issueManagement>
-        <system>JIRA</system>
-        <url>https://issues.apache.org/jira/browse/SANTUARIO</url>
-    </issueManagement>
-    <mailingLists>
-        <mailingList>
-            <name>Apache Santuario Developer List</name>
-            <subscribe>dev-subscribe@santuario.apache.org</subscribe>
-            <unsubscribe>
-                dev-unsubscribe@santuario.apache.org
-            </unsubscribe>
-            <post>dev@santuario.apache.org</post>
-            <archive>
-                http://news.gmane.org/gmane.text.xml.security.devel
-            </archive>
-        </mailingList>
-    </mailingLists>
+    <url>https://github.com/KJHXTC/santuario-xml-security-java</url>
+<!--    <issueManagement>-->
+<!--        <system>JIRA</system>-->
+<!--        <url>https://issues.apache.org/jira/browse/SANTUARIO</url>-->
+<!--    </issueManagement>-->
+<!--    <mailingLists>-->
+<!--        <mailingList>-->
+<!--            <name>Apache Santuario Developer List</name>-->
+<!--            <subscribe>dev-subscribe@santuario.apache.org</subscribe>-->
+<!--            <unsubscribe>-->
+<!--                dev-unsubscribe@santuario.apache.org-->
+<!--            </unsubscribe>-->
+<!--            <post>dev@santuario.apache.org</post>-->
+<!--            <archive>-->
+<!--                http://news.gmane.org/gmane.text.xml.security.devel-->
+<!--            </archive>-->
+<!--        </mailingList>-->
+<!--    </mailingLists>-->
     <inceptionYear>2000</inceptionYear>
     <licenses>
         <license>
@@ -55,23 +55,23 @@
             <distribution>repo</distribution>
         </license>
     </licenses>
-    <scm>
-        <connection>scm:git:https://gitbox.apache.org/repos/asf/santuario-xml-security-java.git</connection>
-        <developerConnection>scm:git:https://gitbox.apache.org/repos/asf/santuario-xml-security-java.git</developerConnection>
-        <url>https://gitbox.apache.org/repos/asf?p=santuario-xml-security-java.git;a=summary</url>
-      <tag>HEAD</tag>
-  </scm>
+<!--    <scm>-->
+<!--        <connection>scm:git:https://gitbox.apache.org/repos/asf/santuario-xml-security-java.git</connection>-->
+<!--        <developerConnection>scm:git:https://gitbox.apache.org/repos/asf/santuario-xml-security-java.git</developerConnection>-->
+<!--        <url>https://gitbox.apache.org/repos/asf?p=santuario-xml-security-java.git;a=summary</url>-->
+<!--      <tag>HEAD</tag>-->
+<!--  </scm>-->
 
-    <organization>
-        <name>The Apache Software Foundation</name>
-        <url>https://www.apache.org/</url>
-    </organization>
+<!--    <organization>-->
+<!--        <name>The Apache Software Foundation</name>-->
+<!--        <url>https://www.apache.org/</url>-->
+<!--    </organization>-->
 
-    <parent>
-        <groupId>org.apache</groupId>
-        <artifactId>apache</artifactId>
-        <version>30</version>
-    </parent>
+<!--    <parent>-->
+<!--        <groupId>org.apache</groupId>-->
+<!--        <artifactId>apache</artifactId>-->
+<!--        <version>30</version>-->
+<!--    </parent>-->
 
     <build>
         <sourceDirectory>${basedir}/src/main/java</sourceDirectory>
@@ -695,33 +695,33 @@
 
     <distributionManagement>
         <repository>
-            <id>apache.releases.https</id>
-            <name>Apache Release Distribution Repository</name>
-            <url>https://repository.apache.org/service/local/staging/deploy/maven2</url>
+            <id>nexus-releases</id>
+            <name>nexus-releases</name>
+            <url>https://mvn.kjhxtc.com/repository/maven-releases/</url>
         </repository>
         <snapshotRepository>
-            <id>apache.snapshots.https</id>
-            <name>Apache Development Snapshot Repository</name>
-            <url>https://repository.apache.org/content/repositories/snapshots</url>
+            <id>nexus-releases</id>
+            <name>nexus-snapshots</name>
+            <url>https://mvn.kjhxtc.com/repository/maven-snapshots/</url>
             <uniqueVersion>false</uniqueVersion>
         </snapshotRepository>
     </distributionManagement>
 
-    <reporting>
-        <plugins>
-            <plugin>
-                <groupId>org.codehaus.mojo</groupId>
-                <artifactId>clirr-maven-plugin</artifactId>
-                <version>${clirr.version}</version>
-                <configuration>
-                    <minSeverity>${minSeverity}</minSeverity>
-                </configuration>
-            </plugin>
-            <plugin>
-                <groupId>org.owasp</groupId>
-                <artifactId>dependency-check-maven</artifactId>
-                <version>${maven-owasp-plugin-version}</version>
-            </plugin>
-        </plugins>
-    </reporting>
+<!--    <reporting>-->
+<!--        <plugins>-->
+<!--            <plugin>-->
+<!--                <groupId>org.codehaus.mojo</groupId>-->
+<!--                <artifactId>clirr-maven-plugin</artifactId>-->
+<!--                <version>${clirr.version}</version>-->
+<!--                <configuration>-->
+<!--                    <minSeverity>${minSeverity}</minSeverity>-->
+<!--                </configuration>-->
+<!--            </plugin>-->
+<!--            <plugin>-->
+<!--                <groupId>org.owasp</groupId>-->
+<!--                <artifactId>dependency-check-maven</artifactId>-->
+<!--                <version>${maven-owasp-plugin-version}</version>-->
+<!--            </plugin>-->
+<!--        </plugins>-->
+<!--    </reporting>-->
 </project>
