@@ -4,7 +4,7 @@
           version="2.1">
     <bindings schemaLocation="../schemas/security-config.xsd" version="1.0">
         <schemaBindings>
-            <package name="org.apache.xml.security.configuration"/>
+            <package name="com.kjhxtc.internal.apache.xml.security.configuration"/>
         </schemaBindings>
     </bindings>
 </bindings>

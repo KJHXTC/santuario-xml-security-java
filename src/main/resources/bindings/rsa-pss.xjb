@@ -4,7 +4,7 @@
           version="2.1">
     <bindings schemaLocation="schemas/rsa-pss.xsd" version="1.0">
         <schemaBindings>
-            <package name="org.apache.xml.security.binding.xmldsig.pss"/>
+            <package name="com.kjhxtc.internal.apache.xml.security.binding.xmldsig.pss"/>
         </schemaBindings>
     </bindings>
 </bindings>
